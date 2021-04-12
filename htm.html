@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css.css">
+    
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <div class="bbox">
+            <button onclick="playPause()" class="play" id="play"></button> 
+            <button  id="size" class="size" onclick="openFullscreen()"></button>
+            <button  id="resize" class="resize" onclick="closeFullscreen()"></button>
+            <button onclick="loop()" class="loop" id="loop"></button>
+            <button onclick="noloop()" class="loop" id="noloop"></button>
+            <button onclick="CC()" class="CC" id="cc"></button>
+            <a href="index.html" id="sender" class="sender">
+                <button style="background-color: transparent; display: none;"></button>
+                </a>
+                <a href="index1.html" id="receiver" class="receiver">
+                    <button style="background-color: transparent; display: none;"></button>
+                </a>
+                <button onclick="HD()" class="hd" id="hd"></button>
+            <button class="btn" id="PTP" onclick="PTP()"></button>
+            <div id="btnbtn">
+                <button class="btnbtn-warning" id="C:/Users/atmospher/Desktop/video player/yt1s.com - Dr Andrew Badley discusses new COVID19 virus variant_1080p.mp4" onclick="hd1()"></button>
+                <button class="btn1btn-warning" id="{{video.videoLow}}" onclick="videoLow()"></button>
+            </div>
+            
+            <div id="time" class="time">
+                    <time id="time-elapsed">00:00</time><span\> / </span><time id="duration" style="color: rgba(240, 248, 255, 0.637);">00:00</time>
+                
+            </div>
+            <button id="turnoff" class="turnoff" onclick="nosubtitles()"></button>
+            <button id="english" class="english" onclick="en()"></button>
+            <button id="chinese" class="chinese" onclick="fr()"></button>
+            <button data-title="Mute (m)" class="volume-button" id="volume-button">
+                <svg style="width: 5%; height: 2%;">
+                <use class="hidden" href="#volume-mute"></use>
+                <use class="hidden" href="#volume-low"></use>
+                <use href="#volume-high"></use>
+                </svg>
+            </button>
+            <div class="volume-controls">
+                
+                <input class="volume" id="volume" value="1" type="range" max="1" min="0" step="0.01">
+            </div>
+            
+            
+            <div class="slidecontainer">
+                <input type="range" min="1" max="1500"  value="0" class="slider" id="myRange">
+            </div>
+            <video id="video1" class="box" preload="metadata">
+                <source id="sourceVideo" src="yt1s.com - COVID19 Vaccines Interview with an Expert_v240P.mp4" type="video/mp4">
+                    <track src="VTT.vtt" srclang="en" kind="subtitles" >
+                        <track src="" srclang="fr" kind="subtitles" >
+
+
+                
+            Your browser does not support HTML video.
+            </video> 
+        </div>
+          <div class="box1">
+        
+    </div>
+</div>
+    
+
+    <script src="js.js"></script>
+    
+</body>
+</html>
